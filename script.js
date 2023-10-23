@@ -57,6 +57,8 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
+const dummyData = document.querySelector('.dummy');
+
 //display movements
 const displayMovements = function (movements, sort = false) {
   containerMovements.innerHTML = '';
@@ -150,6 +152,10 @@ let currentAccount;
 
 btnLogin.addEventListener('click', function (e) {
   e.preventDefault();
+
+  //hiding dummy data
+  dummyData.style.display = 'none';
+
   currentAccount = accounts.find(
     acc => acc.userName === inputLoginUsername.value
   );

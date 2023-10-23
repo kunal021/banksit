@@ -295,3 +295,18 @@ h2 {
 .timer {
   font-weight: 600;
 }
+
+.dummy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  font-size: 2rem;
+}
+
+.dummy table,
+.dummy th,
+.dummy td {
+  border: 1px solid black;
+}
